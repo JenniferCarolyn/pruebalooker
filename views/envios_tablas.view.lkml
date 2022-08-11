@@ -114,6 +114,7 @@ view: envios_tablas {
   }
 
   dimension: order_id {
+    primary_key: yes
     type: string
     sql: ${TABLE}.Order_ID ;;
   }
