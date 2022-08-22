@@ -24,6 +24,7 @@ view: envios_tablas {
   dimension: comprador {
     type: string
     sql: ${TABLE}.Comprador ;;
+    drill_fields: [id_cliente]
   }
 
   # Dates and timestamps can be represented in Looker using a dimension group of type: time.
@@ -117,6 +118,7 @@ view: envios_tablas {
     primary_key: yes
     type: string
     sql: ${TABLE}.Order_ID ;;
+    drill_fields: [comprador]
   }
 
   dimension: origin_warehouse_code {
