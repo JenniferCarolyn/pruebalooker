@@ -25,7 +25,11 @@ persist_with: envios_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
-explore: envios_tablas {}
+explore: envios_tablas {
+  always_filter: {
+    filters: [envios_tablas.cs_year: "2019"]
+  }
+}
 
 explore: dt {}
 
