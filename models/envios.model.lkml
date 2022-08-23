@@ -26,11 +26,15 @@ persist_with: envios_datagroup
 # Each joined view also needs to define a primary key.
 
 explore: envios_tablas {
-  always_filter: {
-    filters: [envios_tablas.cs_year: "2019"]
+ always_filter: {
+   filters: [year: "2019"]
   }
+ }
+
+explore: dt {
+
 }
 
-explore: dt {}
+explore: dt_2 {
 
-explore: dt_2 {}
+}
